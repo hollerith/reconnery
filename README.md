@@ -80,7 +80,9 @@ Options for grep strings in files found by spider. By default it doesn't grep st
 * Add flag for grep how many lines to show before and after match
 * Multi threading
 
-## Author
+## Original Author(Sharesearch)
 **nikallass**
 <br>Telegram: [@is_man](https://t.me/is_man)
 <br>LinkedIn: [Nikita M.](https://linkedin.com/in/mednikand)
+
+If I make substantive changes I will submit back NOT HERE. namely PtH - follow Nikita!
