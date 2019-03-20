@@ -1,28 +1,34 @@
 # Samba, NFS shares spider and grepper
-ShareSearch tool goes through hosts with SMB, NFS, checking credentials,
-looking for interesting stuff and greping sensitive data in it. WARNING! Alfa version, a lot of bugs and spaghetti code.
+Reconnery tool goes through hosts with SMB, NFS, checking credentials,
+looking for interesting stuff and greping sensitive data in it. 
+
+## WARNING! Alpha version, a lot of bugs and spaghetti code.
+
+![ShareShearch](./reconnery.png)
+
+forked for no other reason than I cannot type shareshearch
 
 ## Install
     pip3 install -r requirements.txt
     sudo apt-get install cifs-utils
 
 ## Usage
-    python3 sharesearch.py [options] DOMAIN/login:password HOSTS_CIDR
-    python3 sharesearch.py [options] WORKGROUP/login:LM:NT HOSTS_CIDR
+    python3 reconnery.py [options] DOMAIN/login:password HOSTS_CIDR
+    python3 reconnery.py [options] WORKGROUP/login:LM:NT HOSTS_CIDR
 
-    python3 sharesearch.py -p all -w -v -H hosts.lst -C creds.lst
-    python3 sharesearch.py -s --share-num 2 --grep -i prev_share_results.csv 192.168.1.62
+    python3 reconnery.py -p all -w -v -H hosts.lst -C creds.lst
+    python3 reconnery.py -s --share-num 2 --grep -i prev_share_results.csv 192.168.1.62
 
 ### Check credentials:
-![Sharesearch usage. Check creds.](https://image.ibb.co/i5GNpy/Selection_290.jpg)
+![reconnery usage. Check creds.](https://image.ibb.co/i5GNpy/Selection_290.jpg)
 
 ### Grep stuff:
-![Sharesearch usage. Grep files.](https://image.ibb.co/m2yDwd/Selection_291.jpg)
+![reconnery usage. Grep files.](https://image.ibb.co/m2yDwd/Selection_291.jpg)
 
 
 
 ## Configuration:
-You can configure sharesearch in default.cfg. 
+You can configure reconnery in default.cfg. 
 
 ## Lists
 <pre>
