@@ -10,7 +10,7 @@
 import os
 import sys
 if sys.version_info < (3, 0):
-    sys.stdout.write("Sorry, sharesearch requires Python 3.x\n")
+    sys.stdout.write("Sorry, reconnery requires Python 3.x\n")
     sys.exit(1)
 import datetime
 import time
@@ -51,7 +51,7 @@ class Program(object):
         self.script_path = (os.path.dirname(os.path.realpath(__file__)))
 
         # Check if export path ./out exists
-        out_dir = self.script_path + '/out'
+        out_dir = './out'
         print(out_dir)
         if os.path.exists(out_dir):
             if not os.path.isdir(out_dir):
