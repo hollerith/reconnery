@@ -215,7 +215,7 @@ class Program(object):
 
     def work(self):
         self.time_start_working = time.time()
-        self.export_path = self.script_path + '/out/shares_' + datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + '.csv'
+        self.export_path = './out/shares_' + datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + '.csv'
         self.grep_path = self.export_path.replace('.csv', '_grep.txt')
         self.spider_path = self.export_path.replace('.csv', '_spider.txt')
 
